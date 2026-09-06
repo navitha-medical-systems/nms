@@ -3,27 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Navitha Medical Systems | Hospital Equipment, CSSD & Sterilization Infrastructure</title>
-  <meta name="title" content="Navitha Medical Systems | Hospital Equipment, CSSD & Sterilization Infrastructure">
   <meta name="description" content="Navitha Medical Systems supplies medical-grade CSSD equipment, ETO sterilizers, autoclaves, biological indicators, sterilization reels, and wraps across Telangana and Andhra Pradesh.">
   <meta name="keywords" content="Navitha Medical Systems, ETO cartridges 40g 100g 170g, steam sterilizer machine, autoclave AP TS, CSSD documentation gun, biological indicators, sterilization reels, wrap sheets, hospital equipment AMC Hyderabad Vijayawada">
+  
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Navitha Medical Systems">
-  <link rel="canonical" href="https://navithamedicalsystems.com/">
+  <link rel="canonical" href="https://navitha-medical-systems.github.io/nms/">
 
-  <meta name="geo.region" content="IN-TG;IN-AP">
-  <meta name="geo.placename" content="Telangana, Andhra Pradesh, Hyderabad, Vijayawada">
+  <meta name="google-site-verification" content="f3c47ffb6bfcc7dd">
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://navithamedicalsystems.com/">
+  <meta property="og:url" content="https://navitha-medical-systems.github.io/nms/">
   <meta property="og:title" content="Navitha Medical Systems | Hospital Sterilization & Infrastructure Supply">
   <meta property="og:description" content="Certified sterilization machines, ETO cartridges, reels, indicators, and CSSD consumables with institutional quotation desks across AP and Telangana.">
   <meta property="og:site_name" content="Navitha Medical Systems">
-
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Navitha Medical Systems | Hospital Equipment Solutions">
-  <meta name="twitter:description" content="Wholesale medical and sterilization infrastructure supplies across Andhra Pradesh & Telangana.">
+  <meta name="geo.region" content="IN-TG;IN-AP">
+  <meta name="geo.placename" content="Telangana, Andhra Pradesh, Hyderabad, Vijayawada">
 
   <script type="application/ld+json">
   {
@@ -31,9 +27,9 @@
     "@graph": [
       {
         "@type": "MedicalBusiness",
-        "@id": "https://navithamedicalsystems.com/#organization",
+        "@id": "https://navitha-medical-systems.github.io/nms/#organization",
         "name": "Navitha Medical Systems",
-        "url": "https://navithamedicalsystems.com/",
+        "url": "https://navitha-medical-systems.github.io/nms/",
         "telephone": "+919441430014",
         "priceRange": "$$",
         "areaServed": [
@@ -44,12 +40,12 @@
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Hospital Sterilization & Surgical Infrastructure Catalog",
-          "itemListElement": "https://navithamedicalsystems.com/#product-list"
+          "itemListElement": "https://navitha-medical-systems.github.io/nms/#product-list"
         }
       },
       {
         "@type": "ItemList",
-        "@id": "https://navithamedicalsystems.com/#product-list",
+        "@id": "https://navitha-medical-systems.github.io/nms/#product-list",
         "name": "Navitha Medical Systems Products & Equipment",
         "itemListElement": [
           { "@type": "Product", "position": 1, "name": "Ethylene Oxide Cartridges 40 gms", "category": "Consumables", "description": "Pure unit-dose 40g ETO gas canister for compact sterilizers." },
@@ -389,9 +385,9 @@
 
     .image-placeholder {
       width: 100%;
-      height: 160px;
+      height: 170px;
       border-radius: 8px;
-      background: rgba(0, 0, 0, 0.04);
+      background: rgba(255, 255, 255, 0.4);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -399,20 +395,29 @@
       position: relative;
       overflow: hidden;
       margin-bottom: 14px;
-      border: 1px dashed var(--border-subtle);
+      border: 1px solid var(--border-subtle);
       color: var(--text-muted);
       font-size: 0.8rem;
     }
 
-    .image-placeholder::after {
-      content: 'Navitha Medical Systems';
-      position: absolute;
-      color: rgba(128, 128, 128, 0.2);
-      font-size: 0.75rem;
-      font-weight: 700;
-      transform: rotate(-25deg);
-      pointer-events: none;
-      letter-spacing: 2px;
+    .product-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 8px;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .product-thumb:hover {
+      transform: scale(1.03);
+    }
+
+    .fallback-text {
+      display: none;
+      text-align: center;
+      padding: 10px;
+      font-weight: 600;
     }
 
     .product-card h3 {
@@ -833,38 +838,38 @@
 
   <script>
     const catalog = [
-      { id: "eto-40", name: "Ethylene Oxide Cartridges 40 gms", cat: "consumables", desc: "Pure unit-dose 40g ETO gas canister for compact sterilizers.", unit: "Nos" },
-      { id: "eto-100", name: "Ethylene Oxide Cartridges 100 gms", cat: "consumables", desc: "Pure unit-dose 100g ETO gas canister for mid-capacity chambers.", unit: "Nos" },
-      { id: "eto-170", name: "Ethylene Oxide Cartridges 170 gms", cat: "consumables", desc: "High-capacity 170g pure unit-dose ETO sterilization cylinder.", unit: "Nos" },
-      { id: "mach-eto", name: "Sterilization Machine's (ETO)", cat: "sterilizers", desc: "Low-temperature hospital sterilization chamber system.", unit: "Unit" },
-      { id: "mach-steam", name: "Sterilization Machine's (Steam)", cat: "sterilizers", desc: "High-pressure autoclave autoclaving units.", unit: "Unit" },
-      { id: "doc-gun", name: "DOCUMENTATION GUN", cat: "consumables", desc: "CSSD traceability labeling device for packs.", unit: "Nos" },
-      { id: "tape-eto", name: "Indicator Tape (ETO)", cat: "indicators", desc: "Visual process exposure tape for ETO cycles.", unit: "Rolls" },
-      { id: "tape-steam", name: "Indicator Tape (Steam)", cat: "indicators", desc: "Autoclave color transition assurance tape.", unit: "Rolls" },
-      { id: "chem-eto", name: "Chemical Indicator's (ETO)", cat: "indicators", desc: "Internal pack chemical monitors for ETO validation.", unit: "Packs" },
-      { id: "chem-steam", name: "Chemical Indicator's (Steam)", cat: "indicators", desc: "Multi-parameter internal steam monitoring strips.", unit: "Packs" },
-      { id: "bowie-dick", name: "Bowie Dick Test Pack", cat: "indicators", desc: "Air removal and steam penetration diagnostic pack.", unit: "Packs" },
-      { id: "class-6", name: "Class 6 Indicator (Steam)", cat: "indicators", desc: "Cycle-specific parameter integration indicator.", unit: "Packs" },
-      { id: "class-5", name: "Class 5 Indicator (ETO)", cat: "indicators", desc: "Monitors all critical variables of ETO cycles.", unit: "Packs" },
-      { id: "labels-eto", name: "Documentation Gun Labels (ETO)", cat: "consumables", desc: "Chemical-treated labels for cycle recordkeeping.", unit: "Rolls" },
-      { id: "labels-steam", name: "Documentation Gun Labels (Steam)", cat: "consumables", desc: "Autoclave batch labels for tracking instruments.", unit: "Rolls" },
-      { id: "bi-eto", name: "Biological Indicator (ETO)", cat: "indicators", desc: "Bacillus atrophaeus biological spore validation vials.", unit: "Vials" },
-      { id: "bi-steam", name: "Biological Indicator (Steam)", cat: "indicators", desc: "Geobacillus stearothermophilus spore ampoules.", unit: "Vials" },
-      { id: "reel-5", name: "Sterilization Reels 5CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-75", name: "Sterilization Reels 7.5CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-10", name: "Sterilization Reels 10CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-125", name: "Sterilization Reels 12.5CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-15", name: "Sterilization Reels 15CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-20", name: "Sterilization Reels 20CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-25", name: "Sterilization Reels 25CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-30", name: "Sterilization Reels 30CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-35", name: "Sterilization Reels 35CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "reel-40", name: "Sterilization Reels 40CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls" },
-      { id: "wrap-50", name: "Sterilization Wrap Sheets 50cm x 50cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs" },
-      { id: "wrap-75", name: "Sterilization Wrap Sheets 75cm x 75cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs" },
-      { id: "wrap-100", name: "Sterilization Wrap Sheets 100cm x 100cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs" },
-      { id: "wrap-120", name: "Sterilization Wrap Sheets 120cm x 120cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs" },
-      { id: "wrap-150", name: "Sterilization Wrap Sheets 150cm x 150cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs" }
+      { id: "eto-40", name: "Ethylene Oxide Cartridges 40 gms", cat: "consumables", desc: "Pure unit-dose 40g ETO gas canister for compact sterilizers.", unit: "Nos", img: "images/eto-cartridge-40g.jpg" },
+      { id: "eto-100", name: "Ethylene Oxide Cartridges 100 gms", cat: "consumables", desc: "Pure unit-dose 100g ETO gas canister for mid-capacity chambers.", unit: "Nos", img: "images/eto-cartridge-100g.jpg" },
+      { id: "eto-170", name: "Ethylene Oxide Cartridges 170 gms", cat: "consumables", desc: "High-capacity 170g pure unit-dose ETO sterilization cylinder.", unit: "Nos", img: "images/eto-cartridge-170g.jpg" },
+      { id: "mach-eto", name: "Sterilization Machine's (ETO)", cat: "sterilizers", desc: "Low-temperature hospital sterilization chamber system.", unit: "Unit", img: "images/sterilizer-eto.jpg" },
+      { id: "mach-steam", name: "Sterilization Machine's (Steam)", cat: "sterilizers", desc: "High-pressure autoclave autoclaving units.", unit: "Unit", img: "images/sterilizer-steam.jpg" },
+      { id: "doc-gun", name: "DOCUMENTATION GUN", cat: "consumables", desc: "CSSD traceability labeling device for packs.", unit: "Nos", img: "images/doc-gun.jpg" },
+      { id: "tape-eto", name: "Indicator Tape (ETO)", cat: "indicators", desc: "Visual process exposure tape for ETO cycles.", unit: "Rolls", img: "images/tape-eto.jpg" },
+      { id: "tape-steam", name: "Indicator Tape (Steam)", cat: "indicators", desc: "Autoclave color transition assurance tape.", unit: "Rolls", img: "images/tape-steam.jpg" },
+      { id: "chem-eto", name: "Chemical Indicator's (ETO)", cat: "indicators", desc: "Internal pack chemical monitors for ETO validation.", unit: "Packs", img: "images/indicator-eto.jpg" },
+      { id: "chem-steam", name: "Chemical Indicator's (Steam)", cat: "indicators", desc: "Multi-parameter internal steam monitoring strips.", unit: "Packs", img: "images/indicator-steam.jpg" },
+      { id: "bowie-dick", name: "Bowie Dick Test Pack", cat: "indicators", desc: "Air removal and steam penetration diagnostic pack.", unit: "Packs", img: "images/bowie-dick.jpg" },
+      { id: "class-6", name: "Class 6 Indicator (Steam)", cat: "indicators", desc: "Cycle-specific parameter integration indicator.", unit: "Packs", img: "images/class-6.jpg" },
+      { id: "class-5", name: "Class 5 Indicator (ETO)", cat: "indicators", desc: "Monitors all critical variables of ETO cycles.", unit: "Packs", img: "images/class-5.jpg" },
+      { id: "labels-eto", name: "Documentation Gun Labels (ETO)", cat: "consumables", desc: "Chemical-treated labels for cycle recordkeeping.", unit: "Rolls", img: "images/labels-eto.jpg" },
+      { id: "labels-steam", name: "Documentation Gun Labels (Steam)", cat: "consumables", desc: "Autoclave batch labels for tracking instruments.", unit: "Rolls", img: "images/labels-steam.jpg" },
+      { id: "bi-eto", name: "Biological Indicator (ETO)", cat: "indicators", desc: "Bacillus atrophaeus biological spore validation vials.", unit: "Vials", img: "images/bi-eto.jpg" },
+      { id: "bi-steam", name: "Biological Indicator (Steam)", cat: "indicators", desc: "Geobacillus stearothermophilus spore ampoules.", unit: "Vials", img: "images/bi-steam.jpg" },
+      { id: "reel-5", name: "Sterilization Reels 5CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-5cm.jpg" },
+      { id: "reel-75", name: "Sterilization Reels 7.5CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-7.5cm.jpg" },
+      { id: "reel-10", name: "Sterilization Reels 10CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-10cm.jpg" },
+      { id: "reel-125", name: "Sterilization Reels 12.5CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-12.5cm.jpg" },
+      { id: "reel-15", name: "Sterilization Reels 15CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-15cm.jpg" },
+      { id: "reel-20", name: "Sterilization Reels 20CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-20cm.jpg" },
+      { id: "reel-25", name: "Sterilization Reels 25CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-25cm.jpg" },
+      { id: "reel-30", name: "Sterilization Reels 30CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-30cm.jpg" },
+      { id: "reel-35", name: "Sterilization Reels 35CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-35cm.jpg" },
+      { id: "reel-40", name: "Sterilization Reels 40CM x 200MTR", cat: "reels", desc: "Medical-grade barrier flat sterilization roll.", unit: "Rolls", img: "images/reel-40cm.jpg" },
+      { id: "wrap-50", name: "Sterilization Wrap Sheets 50cm x 50cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs", img: "images/wrap-50cm.jpg" },
+      { id: "wrap-75", name: "Sterilization Wrap Sheets 75cm x 75cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs", img: "images/wrap-75cm.jpg" },
+      { id: "wrap-100", name: "Sterilization Wrap Sheets 100cm x 100cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs", img: "images/wrap-100cm.jpg" },
+      { id: "wrap-120", name: "Sterilization Wrap Sheets 120cm x 120cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs", img: "images/wrap-120cm.jpg" },
+      { id: "wrap-150", name: "Sterilization Wrap Sheets 150cm x 150cm", cat: "sheets", desc: "Heavy-duty SMS microbial barrier drape sheet.", unit: "Packs", img: "images/wrap-150cm.jpg" }
     ];
 
     let cart = JSON.parse(localStorage.getItem('navitha_cart') || '{}');
@@ -1008,7 +1013,14 @@
       container.innerHTML = items.map(item => `
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="image-placeholder">
-            <span>Institutional Asset</span>
+            <img 
+              src="${item.img}" 
+              alt="${item.name}" 
+              class="product-thumb"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            >
+            <span class="fallback-text">${item.name}</span>
           </div>
           <h3 itemprop="name">${item.name}</h3>
           <p itemprop="description">${item.desc}</p>
