@@ -1,0 +1,16 @@
+{
+  "name": "navitha-medical-systems",
+  "version": "1.0.0",
+  "description": "Static medical equipment website",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo Build completed successfully"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navitha-medical-systems/nms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
